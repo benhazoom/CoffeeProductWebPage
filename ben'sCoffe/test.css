@@ -1,0 +1,142 @@
+body,ul,li,h1,h2,a,p{
+    margin: 0;
+    padding: 0;
+    font-family: Serif,tahoma,Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 23px;
+}
+body{
+background-color: #ffffff
+;}
+.header{
+	color: rgb(76, 52, 16) ;
+    position: relative;/*moving element relatively from its original position*/
+    font-size: 100px;
+}
+
+
+.banner{
+    position: relative;
+}
+.banner img{
+	width: 100%;
+	height:80%;
+}
+
+.banner .welcome{
+    color: azure;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 1%;/*a size in reletive to banner*/
+}
+.banner h2{
+    font-size: 50px;
+}
+
+.banner .article-banner{
+    color: azure;
+    padding: 5px;
+    position: absolute;
+	background-color: rgb(40, 30, 0,0.2);
+    top: 0%;/*a size in reletive to banner*/
+	width: 99.0%;
+
+}
+.banner h3{
+	margin:10px ;
+    font-size: 35px;
+}
+
+
+
+.background img{
+	position:absolute;
+	height: 100%;
+	width: auto;
+	left: 0%;
+}
+
+
+
+nav{
+    background-color: #f1f7f6;
+    position:fixed;
+    top:0px;
+    top:80%;
+    width: 15%;
+	
+}
+
+
+nav li a.join{
+    color:rgb(40, 30, 0);
+}
+main{
+    max-width: 100%;
+    width: 70%;
+    margin: 5px auto;
+    padding:0 40px;
+    box-sizing: border-box;/*while zooming text decends a line when hitting the padding*/
+}
+
+article p{
+    line-height: 1.5em;
+    color: #4b4b4b;
+}
+
+
+
+
+
+
+section.join{
+    background: #F4F4F4;
+    text-align: center;
+    padding: 20px 20px;
+    color: #4b4b4b;
+}
+.join h2{
+    font-size: 2em;
+}
+form input{
+    margin:20px 0;
+    padding:10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border:1px solid rgb(40, 30, 0);
+}
+footer{
+    background: rgb(40, 30, 0);
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 2000px){/*style aplly when over 1400px large screens*/
+    .banner .welcome h2{
+
+        font-size: 60px;
+    } 
+    .header{
+        font-size: 145px;
+    }
+}
+@media screen and (max-width: 1400px){/*style aplly when over 960px most laptops*/
+    .banner .welcome h2{
+
+        font-size: 40px;
+    } 
+    .header{
+        font-size: 100px;
+    }
+}
+@media screen and (max-width: 960px){/*style aplly when below 700*/
+    .banner .welcome h2{
+
+        font-size: 30px;
+    } 
+    .header{
+        font-size: 80px;
+    }
+}
